@@ -1,7 +1,9 @@
+import os
+os.system('pip install discord')
 import discord
 from discord.ext import commands
 
-TOKEN = 'Njg3NzMzNzU0NTUwMDI2MjU4.Xmv5lg.ZqFBM5VNahXXb2QKwatO_bhgNHE'
+TOKEN = 'Njg3NzMzNzU0NTUwMDI2MjU4.Xm0cIg.zUFXLmWvkZZ_NWqKEa63UqfbVJo'
 bot = commands.Bot(command_prefix='-')
 
 
@@ -18,6 +20,10 @@ async def kv(ctx, arg):
 		await ctx.send("Вы вставили реверсивку себе в жёпа")
 	else:
 		await ctx.send("Нах иди")
+
+@bot.command()
+async def F(ctx):
+        await ctx.send(":Press_F:")
 
 
 bot.run(TOKEN)
